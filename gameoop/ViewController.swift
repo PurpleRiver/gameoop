@@ -1,14 +1,11 @@
-//
-//  ViewController.swift
-//  gameoop
-//
-//  Created by Идель Юсупов on 11.09.16.
-//  Copyright © 2016 Идель Юсупов. All rights reserved.
-//
+
 
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

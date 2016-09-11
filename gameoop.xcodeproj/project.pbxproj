@@ -12,6 +12,9 @@
 		490449D51D85A2A100D7F769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490449D31D85A2A100D7F769 /* Main.storyboard */; };
 		490449D71D85A2A100D7F769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490449D61D85A2A100D7F769 /* Assets.xcassets */; };
 		490449DA1D85A2A100D7F769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490449D81D85A2A100D7F769 /* LaunchScreen.storyboard */; };
+		490449E21D85B0A600D7F769 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E11D85B0A600D7F769 /* Enemy.swift */; };
+		490449E41D85B12600D7F769 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E31D85B12600D7F769 /* Character.swift */; };
+		490449E61D85C93E00D7F769 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E51D85C93E00D7F769 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		490449D61D85A2A100D7F769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490449D91D85A2A100D7F769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490449DB1D85A2A100D7F769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		490449E11D85B0A600D7F769 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		490449E31D85B12600D7F769 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		490449E51D85C93E00D7F769 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				490449D61D85A2A100D7F769 /* Assets.xcassets */,
 				490449D81D85A2A100D7F769 /* LaunchScreen.storyboard */,
 				490449DB1D85A2A100D7F769 /* Info.plist */,
+				490449E11D85B0A600D7F769 /* Enemy.swift */,
+				490449E31D85B12600D7F769 /* Character.swift */,
+				490449E51D85C93E00D7F769 /* Player.swift */,
 			);
 			path = gameoop;
 			sourceTree = "<group>";
@@ -137,6 +146,9 @@
 			files = (
 				490449D21D85A2A100D7F769 /* ViewController.swift in Sources */,
 				490449D01D85A2A100D7F769 /* AppDelegate.swift in Sources */,
+				490449E21D85B0A600D7F769 /* Enemy.swift in Sources */,
+				490449E61D85C93E00D7F769 /* Player.swift in Sources */,
+				490449E41D85B12600D7F769 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
