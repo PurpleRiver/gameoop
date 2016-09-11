@@ -1,25 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gameoop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-Lt-iPc">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Ai0-vB-TJR">
+                                <rect key="frame" x="0.0" y="272" width="568" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4SU-Rb-SWO"/>
+                                    <constraint firstAttribute="height" constant="151" id="FcA-2D-yGc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4SU-Rb-SWO"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="zsw-5g-Did">
+                                <rect key="frame" x="0.0" y="104" width="122" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="WSb-Sp-RSX"/>
+                                    <constraint firstAttribute="height" constant="176" id="xsJ-pd-waz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="PfH-qt-N51">
+                                <rect key="frame" x="414" y="98" width="154" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="X0U-oa-m7s"/>
+                                    <constraint firstAttribute="width" constant="154" id="bd9-9o-y1c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PfH-qt-N51" secondAttribute="bottom" id="6dB-Ab-1Oh"/>
+                            <constraint firstItem="YWO-Lt-iPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BVQ-er-JrW"/>
+                            <constraint firstAttribute="trailing" secondItem="YWO-Lt-iPc" secondAttribute="trailing" id="FUO-Bn-UU1"/>
+                            <constraint firstItem="Ai0-vB-TJR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GEG-bh-WTF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zsw-5g-Did" secondAttribute="bottom" constant="40" id="GqI-2X-KfI"/>
+                            <constraint firstAttribute="trailing" secondItem="Ai0-vB-TJR" secondAttribute="trailing" id="LbR-eI-xZt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YWO-Lt-iPc" secondAttribute="bottom" id="UzB-pn-fEb"/>
+                            <constraint firstAttribute="trailing" secondItem="Ai0-vB-TJR" secondAttribute="trailing" id="Vec-kB-ZRH"/>
+                            <constraint firstItem="zsw-5g-Did" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fb7-pC-ZlF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ai0-vB-TJR" secondAttribute="bottom" id="hUF-RT-mpg"/>
+                            <constraint firstItem="YWO-Lt-iPc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="isg-rZ-2i4"/>
+                            <constraint firstAttribute="trailing" secondItem="PfH-qt-N51" secondAttribute="trailing" id="qDW-rU-9f9"/>
+                            <constraint firstItem="Ai0-vB-TJR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="szi-qs-Z16"/>
+                            <constraint firstAttribute="bottom" secondItem="Ai0-vB-TJR" secondAttribute="bottom" constant="-103" id="twR-af-nE5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LbR-eI-xZt"/>
+                                <exclude reference="szi-qs-Z16"/>
+                                <exclude reference="hUF-RT-mpg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="379" y="214"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="768" height="1024"/>
+        <image name="enem1" width="574" height="487"/>
+        <image name="ground" width="768" height="164"/>
+        <image name="player" width="356" height="475"/>
+    </resources>
 </document>
