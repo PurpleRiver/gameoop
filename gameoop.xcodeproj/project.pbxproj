@@ -15,6 +15,8 @@
 		490449E21D85B0A600D7F769 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E11D85B0A600D7F769 /* Enemy.swift */; };
 		490449E41D85B12600D7F769 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E31D85B12600D7F769 /* Character.swift */; };
 		490449E61D85C93E00D7F769 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E51D85C93E00D7F769 /* Player.swift */; };
+		49238F441D86D86F00BBC66B /* devilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49238F431D86D86F00BBC66B /* devilWizard.swift */; };
+		49238F461D86D99200BBC66B /* GiantGolem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49238F451D86D99200BBC66B /* GiantGolem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		490449E11D85B0A600D7F769 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		490449E31D85B12600D7F769 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		490449E51D85C93E00D7F769 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		49238F431D86D86F00BBC66B /* devilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = devilWizard.swift; sourceTree = "<group>"; };
+		49238F451D86D99200BBC66B /* GiantGolem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiantGolem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				490449E11D85B0A600D7F769 /* Enemy.swift */,
 				490449E31D85B12600D7F769 /* Character.swift */,
 				490449E51D85C93E00D7F769 /* Player.swift */,
+				49238F431D86D86F00BBC66B /* devilWizard.swift */,
+				49238F451D86D99200BBC66B /* GiantGolem.swift */,
 			);
 			path = gameoop;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 				490449D01D85A2A100D7F769 /* AppDelegate.swift in Sources */,
 				490449E21D85B0A600D7F769 /* Enemy.swift in Sources */,
 				490449E61D85C93E00D7F769 /* Player.swift in Sources */,
+				49238F461D86D99200BBC66B /* GiantGolem.swift in Sources */,
 				490449E41D85B12600D7F769 /* Character.swift in Sources */,
+				49238F441D86D86F00BBC66B /* devilWizard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				490449E01D85A2A100D7F769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
