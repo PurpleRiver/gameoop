@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = Player(name: "Somename", hp: 50, attackPwr: 50)
+        player = Player(name: "Somename", hp: 500, attackPwr: 50)
         
         playerHp.text = "\(player.hp) HP"
         
@@ -61,7 +61,6 @@ class ViewController: UIViewController {
         }
         if let loot = enemy.dropLoot() {
             player.addItemToInventory(loot)
-            inventoryLbl.text = "\(player.inventory)"
             chestMessage = "\(player.name) found \(loot)"
             chestImg.hidden = false
             
@@ -85,6 +84,7 @@ class ViewController: UIViewController {
         
         chestImg.hidden = true
         printLbl.text = chestMessage
+        inventoryLbl.text = "\(player.inventory)"
         NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.generateRandomEnemy), userInfo: nil, repeats: false)
     }
     

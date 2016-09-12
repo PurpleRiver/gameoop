@@ -68,13 +68,13 @@
                                     <action selector="chestBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YD8-DW-CCl"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="l8r-jM-8GK" userLabel="img">
-                                <rect key="frame" x="158" y="28" width="253" height="55"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="l8r-jM-8GK" userLabel="img">
+                                <rect key="frame" x="111" y="28" width="335" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="7FF-mF-3Lq"/>
                                     <constraint firstAttribute="width" constant="393" id="Fob-D2-XOX"/>
                                     <constraint firstAttribute="height" constant="55" id="PP1-9r-Kgo"/>
-                                    <constraint firstAttribute="width" constant="253" id="mvM-eC-gDo"/>
+                                    <constraint firstAttribute="width" constant="450" id="mvM-eC-gDo"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -84,9 +84,9 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press atack to fight!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77h-QQ-4dG">
-                                <rect key="frame" x="176" y="44" width="216" height="23"/>
+                                <rect key="frame" x="84" y="44" width="400" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="TUg-9L-aoO"/>
+                                    <constraint firstAttribute="width" constant="400" id="TUg-9L-aoO"/>
                                     <constraint firstAttribute="height" constant="23" id="xma-XW-dol"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -126,9 +126,10 @@
                                     <constraint firstAttribute="height" constant="102" id="amf-Gm-7UN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-AH-9eA" userLabel="inventory">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6u-AH-9eA" userLabel="inventory">
                                 <rect key="frame" x="14" y="9" width="115" height="113"/>
-                                <attributedString key="attributedText"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -184,7 +185,7 @@
                         <outlet property="chestMsg" destination="SQ2-o7-7Gl" id="hoV-OS-wzf"/>
                         <outlet property="enemyHp" destination="FWG-oR-XFh" id="jrI-Ko-tXe"/>
                         <outlet property="enemyImg" destination="PfH-qt-N51" id="Uon-xp-DbB"/>
-                        <outlet property="inventory" destination="I6u-AH-9eA" id="Pnu-Jc-dNh"/>
+                        <outlet property="inventoryLbl" destination="I6u-AH-9eA" id="YIh-JP-kv4"/>
                         <outlet property="playerHp" destination="rwu-6z-bFL" id="gBK-AQ-iGK"/>
                         <outlet property="playerImg" destination="zsw-5g-Did" id="5Uh-wp-kbf"/>
                         <outlet property="printLbl" destination="77h-QQ-4dG" id="swM-1g-Azs"/>
