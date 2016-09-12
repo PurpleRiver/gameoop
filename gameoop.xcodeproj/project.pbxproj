@@ -17,6 +17,9 @@
 		490449E61D85C93E00D7F769 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490449E51D85C93E00D7F769 /* Player.swift */; };
 		49238F441D86D86F00BBC66B /* devilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49238F431D86D86F00BBC66B /* devilWizard.swift */; };
 		49238F461D86D99200BBC66B /* GiantGolem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49238F451D86D99200BBC66B /* GiantGolem.swift */; };
+		49238F4A1D86F16400BBC66B /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49238F471D86F16400BBC66B /* bite.wav */; };
+		49238F4B1D86F16400BBC66B /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49238F481D86F16400BBC66B /* cave-music.mp3 */; };
+		49238F4C1D86F16400BBC66B /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49238F491D86F16400BBC66B /* death.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		490449E51D85C93E00D7F769 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		49238F431D86D86F00BBC66B /* devilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = devilWizard.swift; sourceTree = "<group>"; };
 		49238F451D86D99200BBC66B /* GiantGolem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiantGolem.swift; sourceTree = "<group>"; };
+		49238F471D86F16400BBC66B /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		49238F481D86F16400BBC66B /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		49238F491D86F16400BBC66B /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 		490449CE1D85A2A100D7F769 /* gameoop */ = {
 			isa = PBXGroup;
 			children = (
+				49238F471D86F16400BBC66B /* bite.wav */,
+				49238F481D86F16400BBC66B /* cave-music.mp3 */,
+				49238F491D86F16400BBC66B /* death.wav */,
 				490449CF1D85A2A100D7F769 /* AppDelegate.swift */,
 				490449D31D85A2A100D7F769 /* Main.storyboard */,
 				490449D61D85A2A100D7F769 /* Assets.xcassets */,
@@ -137,6 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49238F4A1D86F16400BBC66B /* bite.wav in Resources */,
+				49238F4C1D86F16400BBC66B /* death.wav in Resources */,
+				49238F4B1D86F16400BBC66B /* cave-music.mp3 in Resources */,
 				490449DA1D85A2A100D7F769 /* LaunchScreen.storyboard in Resources */,
 				490449D71D85A2A100D7F769 /* Assets.xcassets in Resources */,
 				490449D51D85A2A100D7F769 /* Main.storyboard in Resources */,

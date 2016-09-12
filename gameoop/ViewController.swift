@@ -1,6 +1,7 @@
 
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -28,6 +29,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var inventoryLbl: UILabel!
     
+    var musicPlayer: AVAudioPlayer!
+    var sfxAttack: AVAudioPlayer!
+    var sfxDeath: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +41,24 @@ class ViewController: UIViewController {
         playerHp.text = "\(player.hp) HP"
         
         generateRandomEnemy()
+        
+        do {
+            
+            try musicPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("cave-music", ofType: "mp3")!))
+            
+            try sfxAttack = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bite", ofType: "wav")!))
+            
+            try sfxDeath = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("death", ofType: "wav")!))
+            
+            musicPlayer.prepareToPlay()
+            musicPlayer.play()
+            
+            sfxDeath.prepareToPlay()
+            sfxAttack.prepareToPlay()
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func generateRandomEnemy () {
@@ -56,6 +79,7 @@ class ViewController: UIViewController {
             printLbl.text = "Attaked \(enemy.type) for \(player.attackPwr) HP"
             enemyHp.text = "\(enemy.hp) HP"
             playerHp.text = "\(player.hp) HP"
+            sfxAttack.play()
         } else {
             printLbl.text = "Attack was unsuccessful!"
         }
@@ -75,6 +99,7 @@ class ViewController: UIViewController {
             playerImg.hidden = true
             chestMsg.text = "Killed by \(enemy.type)"
             printLbl.text = "GAME OVER!"
+            sfxDeath.play()
             attackImg.hidden = true
         }
       
